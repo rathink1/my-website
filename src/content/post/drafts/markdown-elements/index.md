@@ -3,6 +3,8 @@ title: "A post of Markdown elements"
 description: "This post is for testing and listing a number of different markdown elements"
 publishDate: "22 Feb 2023"
 tags: ["test", "markdown"]
+draft: true
+slug: markdown-elements
 ---
 
 ## This is a H2 Heading
@@ -129,7 +131,7 @@ Image in the same folder: `src/content/post/markdown-elements/logo.png`
 
 Image in the aliased assets folder: `src/assets/about-astro.png`
 
-![A cartoon cactus looking at the Astro.build logo](@/assets/about-astro.png)
+![A cartoon cactus looking at the Astro.build logo](@/assets/404-cat.avif)
 
 ## Links
 

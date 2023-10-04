@@ -8,62 +8,69 @@ const MAX_POSTS = 10;
 const allPosts = await getAllPosts();
 const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 
-const cactusTech: Array<{ title: string; desc: string; href: string }> = [
-	{
-		title: "Astro",
-		desc: "Build fast websites, faster.",
-		href: "https://astro.build",
-	},
-	{
-		title: "Astro Assets",
-		desc: "Built-in optimized asset support.",
-		href: "https://docs.astro.build/en/guides/assets/",
-	},
-	{
-		title: "Tailwind CSS",
-		desc: "Rapidly build modern websites without ever leaving your HTML.",
-		href: "https://tailwindcss.com",
-	},
-	{
-		title: "Markdown",
-		desc: "Simple and easy-to-use markup language.",
-		href: "https://www.markdownguide.org/",
-	},
-	{
-		title: "MDX",
-		desc: "Markdown for the component era.",
-		href: "https://mdxjs.com/",
-	},
-	{
-		title: "Satori",
-		desc: "Generating png Open Graph images for blog posts.",
-		href: "https://github.com/vercel/satori",
-	},
-	{
-		title: "Pagefind",
-		desc: "A fully static search library.",
-		href: "https://pagefind.app/",
-	},
-	{
-		title: "Astro Icon",
-		desc: "An easy to use Icon component for Astro.",
-		href: "https://github.com/natemoo-re/astro-icon#readme",
-	},
-];
+// const cactusTech: Array<{ title: string; desc: string; href: string }> = [
+// 	{
+// 		title: "Java 17",
+// 		desc: "Programming language and computing platform",
+// 		href: "https://www.java.com/en/download/help/whatis_java.html",
+// 	},
+// 	{
+// 		title: "Astro Assets",
+// 		desc: "Built-in optimized asset support.",
+// 		href: "https://docs.astro.build/en/guides/assets/",
+// 	},
+// 	{
+// 		title: "Tailwind CSS",
+// 		desc: "Rapidly build modern websites without ever leaving your HTML.",
+// 		href: "https://tailwindcss.com",
+// 	},
+// 	{
+// 		title: "Markdown",
+// 		desc: "Simple and easy-to-use markup language.",
+// 		href: "https://www.markdownguide.org/",
+// 	},
+// 	{
+// 		title: "MDX",
+// 		desc: "Markdown for the component era.",
+// 		href: "https://mdxjs.com/",
+// 	},
+// 	{
+// 		title: "Satori",
+// 		desc: "Generating png Open Graph images for blog posts.",
+// 		href: "https://github.com/vercel/satori",
+// 	},
+// 	{
+// 		title: "Pagefind",
+// 		desc: "A fully static search library.",
+// 		href: "https://pagefind.app/",
+// 	},
+// 	{
+// 		title: "Astro Icon",
+// 		desc: "An easy to use Icon component for Astro.",
+// 		href: "https://github.com/natemoo-re/astro-icon#readme",
+// 	},
+// ];
 ---
 
 <PageLayout meta={{ title: "Home" }}>
 	<section>
-		<h1 class="title mb-6">Hello World!</h1>
+		<h1 class="title mb-6">Greetings Earthling 👽</h1>
 		<p class="mb-4">
-			Hi, I’m a theme for Astro, an example of how you can use this starter to create a personal
-			blog. If you want to know more about how you can customise me, add more posts, and make it
-			your own, click on one the github icon link below which will take you to my repo.
+			Welcome to my digital sanctuary. <br />I’m Rathin, a Software Engineer with 6 years of
+			professional experience.
+		</p>
+		<p class="mb-4">
+			I have expertise in building scalable, cloud-first web applications and microservices, for
+			large enterprises and startups in Banking, Fintech & E-commerce domains.
+		</p>
+		<p class="mb-4">
+			Primarily a backend developer specialized in Java, Spring, Python, Redis, RabbitMQ, SQL,
+			NoSQL, AWS, Docker & Kubernetes, I have also worked with React and AngularJS.
 		</p>
 		<SocialList />
 	</section>
 	<section aria-label="Blog post list" class="mt-16">
-		<h2 class="title mb-4 text-xl">Posts</h2>
+		<h2 class="title mb-4 text-xl">My Tech Musings</h2>
 		<ul class="space-y-4 sm:space-y-2">
 			{
 				allPostsByDate.map((p) => (
@@ -75,8 +82,8 @@ const cactusTech: Array<{ title: string; desc: string; href: string }> = [
 		</ul>
 	</section>
 	<section class="mt-16">
-		<h2 class="title mb-4 text-xl">Technologies</h2>
-		<ul class="space-y-4 sm:space-y-2">
+		<h2 class="title mb-4 text-xl">Tech I use daily (almost)</h2>
+		<!-- <ul class="space-y-4 sm:space-y-2">
 			{
 				cactusTech.map(({ href, title, desc }) => (
 					<li>
@@ -87,11 +94,53 @@ const cactusTech: Array<{ title: string; desc: string; href: string }> = [
 							class="cactus-link inline-block"
 						>
 							{title}
-						</a>: 
-						<p class="inline-block sm:mt-2">{desc}</p>
+						</a>
+						: <p class="inline-block sm:mt-2">{desc}</p>
 					</li>
 				))
 			}
+		</ul> -->
+		<ul class="space-y-4 sm:space-y-2">
+			<li>
+				<p class="text-gray-500">Programming Languages</p>
+				<p>Java 17, Python 3, Kotlin, TypeScript, JavaScript, SQL, Rust, Bash</p>
+			</li>
+
+			<li>
+				<p class="text-gray-500">Frameworks</p>
+				<ul class="ml-6 list-none">
+					<li>
+						<p class="text-gray-500">Backend</p>
+						<p>Spring Boot, Spring MVC, Spring Cloud, Dropwizard, JPA, Hibernate</p>
+					</li>
+					<li>
+						<p class="text-gray-500">Frontend</p>
+						<p>ReactJS, AngularJS, Astro</p>
+					</li>
+				</ul>
+			</li>
+
+			<li>
+				<p class="text-gray-500">Cloud Platforms</p>
+				<p>Amazon Web Services (AWS), Google Cloud Platform (GCP)</p>
+			</li>
+
+			<li>
+				<p class="text-gray-500">Databases</p>
+				<p>PostgreSQL, MySQL, SQLite, DynamoDB, MongoDB</p>
+			</li>
+			<li>
+				<p class="text-gray-500">Message Queues</p>
+				<p>RabbitMQ, JMS, Kafka</p>
+			</li>
+			<li>
+				<p class="text-gray-500">Cache</p>
+				<p>Redis</p>
+			</li>
+			<li>
+				<p class="text-gray-500">Other Tech</p>
+				<p>Git, Linux, Docker, Jenkins, Maven, Gradle, Liquibase, HTML5, Tailwind CSS</p>
+			</li>
 		</ul>
 	</section>
 </PageLayout>
