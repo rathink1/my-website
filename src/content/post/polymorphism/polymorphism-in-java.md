@@ -95,7 +95,7 @@ tags: ["Java", "Polymorphism"]
 	Answer is : 
 	```java
 	Child Object : 1       
-	//Coz exact signature method is overriden at runtime
+	//Coz exact signature method is overridden at runtime
 	Child int: 1      
 	//Overloading, neither hiding nor overriding Parent method
 	```
@@ -107,23 +107,23 @@ Ok. All good till now. <br>But how does this changes in case of static methods?
 - Sequence of events for overriding static methods :
 	- At compile time, first method presence is checked in compile-time type, 
 	- then binding with compile-time type method (most specific in case of overloaded method) 
-	- but NO runtime overriding. Hence its not called overrding, its called method hiding. 
+	- but NO runtime overriding. Hence its not called overriding, its called method hiding. 
 - In simple terms, incase of static method, Parent class method (compile time type) is invoked.
 - One more thing to note.<br>An instance method of Child cannot override a static method of Parent, And a static method of Child cannot hide an instance method of Parent. Both will give compile time error. Try thinking why.
 
 
 ### FAQs
 1. _Can we Override static methods by differing method input params?_<br>
-   **NO.** We can declare such methods but its just another method, not an overriding behaviour.
+   **NO.** We can declare such methods but its just another method, not an overriding behavior.
 2. _Can we Override methods that differ only by static keywords?_<br>
    **NO.** This will give compile time error. Refer point 9.
 3. _Can we Override static methods with the same signature in the subclass?_<br>
-   **NO.** We can declare such methods but its not an overriding behaviour, its hiding. No runtime polymorphism.
+   **NO.** We can declare such methods but its not an overriding behavior, its hiding. No runtime polymorphism.
 4. _Can we Overload static methods?_ <br>
    **YES.** By differing method input param.
 5. _Can we Overload methods that differ only by static keywords?_<br>
    **NO.** This will give compile time error.
 
 <br>
-Hope this cleared some doubts on how Polymorhism in Java works. Please hit me up on socials if you want to add something to this article. <br><br>Thanks for reading and
+Hope this cleared some doubts on how Polymorphism in Java works. Please hit me up on socials if you want to add something to this article. <br><br>Thanks for reading and
 ABC - Always be Coding!
