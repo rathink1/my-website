@@ -109,14 +109,14 @@ Ok. All good till now. <br>But how does this changes in case of static methods?
 	- then binding with compile-time type method (most specific in case of overloaded method) 
 	- but NO runtime overriding. Hence its not called overriding, its called method hiding. 
 - In simple terms, incase of static method, Parent class method (compile time type) is invoked.
-- One more thing to note.<br>An instance method of Child cannot override a static method of Parent, And a static method of Child cannot hide an instance method of Parent. Both will give compile time error. Try thinking why.
+- One more thing to note.<br><a name="note">An instance method of Child cannot override a static method of Parent. And a static method of Child cannot hide an instance method of Parent.</a> Both will give compile time error. Try thinking why.
 
 
 ### FAQs
 1. _Can we Override static methods by differing method input params?_<br>
    **NO.** We can declare such methods but its just another method, not an overriding behavior.
 2. _Can we Override methods that differ only by static keywords?_<br>
-   **NO.** This will give compile time error. Refer point 9.
+   **NO.** This will give compile time error. Refer [here](#note).
 3. _Can we Override static methods with the same signature in the subclass?_<br>
    **NO.** We can declare such methods but its not an overriding behavior, its hiding. No runtime polymorphism.
 4. _Can we Overload static methods?_ <br>
