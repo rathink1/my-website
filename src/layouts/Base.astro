@@ -9,6 +9,8 @@ import Footer from "@/components/layout/Footer";
 import SkipLink from "@/components/SkipLink";
 import { siteConfig } from "@/site-config";
 
+import "aos/dist/aos.css"; // AOS styles
+
 interface Props {
 	meta: SiteMeta;
 }
@@ -31,5 +33,11 @@ const {
 			<slot />
 		</main>
 		<Footer />
+		<!-- animate on scroll script -->
+		<script>
+			import { aosInit } from "@/js/aos";
+			aosInit(); // runs on initial page load
+			document.addEventListener("astro:after-swap", aosInit); // runs on view transitions navigation
+		</script>
 	</body>
 </html>
