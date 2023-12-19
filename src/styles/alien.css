@@ -1,0 +1,21 @@
+.alien-emoji {
+    font-size: 100px;
+}
+
+/* Define the animation */
+@keyframes rainbow-lights {
+    0% {
+        filter: blur(0);
+        opacity: 1;
+    }
+
+    100% {
+        filter: blur(10px);
+        opacity: 0;
+    }
+}
+
+/* Apply the animation to the alien emoji */
+.animate-lights {
+    animation: rainbow-lights 2s infinite;
+}

@@ -112,7 +112,7 @@ Ok. All good till now. <br>But how does this changes in case of static methods?
 - One more thing to note.<br><a name="note">An instance method of Child cannot override a static method of Parent. And a static method of Child cannot hide an instance method of Parent.</a> Both will give compile time error. Try thinking why.
 
 
-### FAQs
+## FAQs
 1. _Can we Override static methods by differing method input params?_<br>
    **NO.** We can declare such methods but its just another method, not an overriding behavior.
 2. _Can we Override methods that differ only by static keywords?_<br>

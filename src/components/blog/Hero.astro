@@ -31,7 +31,7 @@ const dateTimeOptions: Intl.DateTimeFormatOptions = {
 		</div>
 	)
 }
-<h1 class="title mb-3 sm:mb-1">{data.title}</h1>
+<h1 class="title mb-3 text-3xl sm:mb-1">{data.title}</h1>
 <div class="flex flex-wrap items-center gap-x-3 gap-y-2">
 	<p class="font-semibold">
 		<FormattedDate date={data.publishDate} dateTimeOptions={dateTimeOptions} /> /{" "}
@@ -46,6 +46,78 @@ const dateTimeOptions: Intl.DateTimeFormatOptions = {
 		)
 	}
 </div>
+<!-- <div class="flex flex-wrap gap-2">
+	<a
+		href="https://twitter.com/intent/tweet?url=https://webreaper.dev/posts/astro-aos-view-transitions/&text=Check%20out%20this%20great%20post!"
+		class="share-button bg-[hsl(203,100%,48%)] text-white hover:bg-[hsl(203,100%,38%)]"
+		rel="noopener noreferrer"
+		target="_blank"
+		aria-label="Share on Twitter"
+	>
+		<svg
+			viewBox="0 0 24 24"
+			xmlns="http://www.w3.org/2000/svg"
+			height="24"
+			width="24"
+			class="h-6 w-6"
+		>
+			<path
+				d="M22.212 5.656a8.384 8.384 0 0 1-2.401.658A4.195 4.195 0 0 0 21.649 4c-.82.488-1.719.83-2.655 1.015a4.182 4.182 0 0 0-7.126 3.814a11.874 11.874 0 0 1-8.621-4.37a4.168 4.168 0 0 0-.566 2.103c0 1.45.739 2.731 1.86 3.481a4.169 4.169 0 0 1-1.894-.523v.051a4.185 4.185 0 0 0 3.355 4.102a4.205 4.205 0 0 1-1.89.072A4.185 4.185 0 0 0 8.02 16.65a8.394 8.394 0 0 1-6.192 1.732a11.831 11.831 0 0 0 6.41 1.88c7.694 0 11.9-6.373 11.9-11.9c0-.18-.004-.362-.012-.541a8.497 8.497 0 0 0 2.086-2.164Z"
+				fill="currentColor"></path>
+		</svg></a
+	>
+
+	<a
+		href="https://www.facebook.com/sharer/sharer.php?u=https://webreaper.dev/posts/astro-aos-view-transitions/"
+		class="share-button bg-[hsl(244,33%,43%)] text-white hover:bg-[hsl(244,33%,33%)]"
+		rel="noopener noreferrer"
+		target="_blank"
+		aria-label="Share on Facebook"
+		><svg
+			viewBox="0 0 24 24"
+			xmlns="http://www.w3.org/2000/svg"
+			height="24"
+			width="24"
+			class="h-6 w-6"
+			><path
+				d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5Z"
+				fill="currentColor"></path></svg
+		></a
+	>
+
+	<a
+		href="https://www.linkedin.com/shareArticle?mini=true&url=https://webreaper.dev/posts/astro-aos-view-transitions/"
+		class="share-button bg-[hsl(201,100%,35%)] text-white hover:bg-[hsl(201,100%,25%)]"
+		rel="noopener noreferrer"
+		target="_blank"
+		aria-label="Share on Linkedin"
+		><svg
+			viewBox="0 0 24 24"
+			xmlns="http://www.w3.org/2000/svg"
+			height="24"
+			width="24"
+			class="h-6 w-6"
+			><path
+				d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002ZM7 8.48H3V21h4V8.48Zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68Z"
+				fill="currentColor"></path></svg
+		></a
+	>
+
+	<button
+		aria-label="Copy link to post"
+		class="share-button copy-link-button group relative bg-gray-600 text-white hover:bg-gray-700"
+		><span class="tooltip-text group-hover:visible group-hover:opacity-100">copy link</span><div
+			class="share-button-svg"
+		>
+			<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" height="24" width="24"
+				><path
+					d="M11 17H7q-2.075 0-3.538-1.463T2 12q0-2.075 1.463-3.538T7 7h4v2H7q-1.25 0-2.125.875T4 12q0 1.25.875 2.125T7 15h4v2Zm-3-4v-2h8v2H8Zm5 4v-2h4q1.25 0 2.125-.875T20 12q0-1.25-.875-2.125T17 9h-4V7h4q2.075 0 3.538 1.463T22 12q0 2.075-1.463 3.538T17 17h-4Z"
+					fill="currentColor"></path></svg
+			>
+		</div>
+	</button>
+</div> -->
+
 {
 	!!data.tags?.length && (
 		<div class="mt-3">

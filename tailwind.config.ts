@@ -103,7 +103,7 @@ export default {
 				sm: {
 					css: {
 						code: {
-							fontSize: theme("fontSize.sm")[0],
+							fontSize: theme("fontSize.base")[0],
 							fontWeight: "400",
 						},
 					},
